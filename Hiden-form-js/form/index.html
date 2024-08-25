@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- meta tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+<button class="signup"> sign up? click here</button>
+
+<br>
+<!-- form -->
+<div class="form" id="form" style="display: none;"><br><button id="daynight">night</button><br>
+    <!-- اسم پسورد و ایمیل -->
+    
+<div class="name">
+    <h3 id="text1">Name:</h3>
+<input type="text" placeholder="Enter Name"  class="style_input">
+<br><br><br>
+<h3 id="text2">E-mail:</h3>
+<input type="email" placeholder="Enter Email" class="style_input">
+<h2 class="explain" >Users Cant See your Email</h2>
+
+<h3 id="text3">password:</h3>
+<input type="password" placeholder="password" class="style_input">
+</div>
+<!-- نمتاهل یا مجرد-->
+<br>
+<input type="radio" name="moein" class="single" ><h4 id="single">single</h4>
+<input type="radio" name="moein" class="married" onclick="wife()"><h4 id="married">married</h4>
+<div>
+<!-- متاهل انتخاب شد -->
+<div id="wife" style="display: none;">
+<h2 id="wife2">your wife`s name:</h2>
+<input type="text" class="style_input" placeholder="wife name"><br><br>
+<input type="checkbox" id="checkbox"><h3 id="childern">childern`s</h3></div>
+<!-- اضافه کردن اینپوت -->
+
+<br><div class="children" style="display: none;">
+<button id="plus" class="btn">ADD</button>
+<button id="manfi" class="btn">REMOVE</button>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<script src="injava.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="android" content="تمرین سیزدهم , tic-toc-toe">
+    <meta name="auther" content="moeinfadakar,معین فداکار">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<div id="glass">
+<body><h1 id="h1">Choose your button first!</h1>
+   <div id="buttons">
+      <table>
+         <tr>
+            <td><button id="xbtn" class="cell2">x</button></td>
+            <br>
+            <td><button id="obtn" class="cell2">o</button></td>
+         </tr>
+      </table>
+   </div>
+  <center>
+   <div id="gamecontainer">
+      <table >
+         <tr>
+              <td>
+                  <button id="b0" onclick="show_index(0, 0)" class="unite"></button>
+              </td>
+              <td>
+                  <button id="b1" onclick="show_index(0, 1)" class="unite"></button>
+              </td>
+              <td>
+                  <button id="b2" onclick="show_index(0, 2)" class="unite"></button>
+              </td>
+         </tr>
+         <tr> 
+              <td>
+                 <button id="b3" onclick="show_index(1, 0)" class="unite"></button>
+              </td>
+              <td>
+                 <button id="b4" onclick="show_index(1, 1)" class="unite"></button>
+              </td>
+              <td>
+                 <button id="b5" onclick="show_index(1, 2)" class="unite"></button>
+              </td>
+      </tr>
+      <tr>
+          <td>
+             <button id="b6" onclick="show_index(2, 0)" class="unite"></button>
+          </td>
+          <td>
+             <button id="b7" onclick="show_index(2, 1)" class="unite"></button>
+          </td>
+          <td>
+             <button id="b8" onclick="show_index(2, 2)" class="unite"></button>
+          </td>
+       </tr>
+   
+     </table>
+     </div>
+ </center>
+
+      <DIV id="scores">
+         <p>x scores: <b id="scores_x">0</b></p>
+         <p>o scores: <b id="scores_o">0</b></p>
+         <p> Draw: <b id="scores_draw">0</b></p>
+      </DIV>
+
+    
+   <button id="btn-restart">
+      <span class="circle1"></span>
+      <span class="circle2"></span>
+      <span class="circle3"></span>
+      <span class="circle4"></span>
+      <span class="circle5"></span>
+      <span id="result" class="text">RESTART</span>
+   </button> 
+
+   <!-- <button id="btn-restart">
+      <span class="circle1"></span>
+      <span class="circle2"></span>
+      <span class="circle3"></span>
+      <span class="circle4"></span>
+      <span class="circle5"></span>
+      <span id="result" class="text">RESTART</span>
+   </button>
+      -->
+  
+
+</div>
+ <script src="java.js"></script>
+</body>
+</html>
+
+

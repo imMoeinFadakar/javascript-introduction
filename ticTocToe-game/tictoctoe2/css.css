@@ -1,0 +1,51 @@
+h1{
+    text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aquamarine;color: black;text-decoration: underline;
+}
+.cell2{
+background-color: rgb(249, 253, 123);color: black;width: 50px;height: 50px;
+text-align: center;position: relative;left: 400%; top: -30px;
+}
+#buttons{
+   text-align: center; 
+}
+.unite{
+    display: flex;justify-content: center;flex-direction: row;
+width: 85px;color: rgb(255, 118, 118);font-size: xx-large;
+height: 70px;font-weight: bolder;font-size: large;
+font-weight: bolder;font-size: 400%;
+}
+body{
+background: linear-gradient(to right, rgb(255, 140, 159), rgb(86, 213, 255));
+
+}
+#gamecontainer{
+  
+
+}
+#scores{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+    
+}
+
+#glass{
+
+   background: rgba( 255, 255, 255, 0.5 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 7px );
+        -webkit-backdrop-filter: blur( 7px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+width: 500px;
+position: relative;
+top: 50px;left: 30%;
+}
+#btn-restart{
+    height: 50px;
+width: 100px;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+margin-left: 40%;
+}

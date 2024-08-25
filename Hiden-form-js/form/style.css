@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 1000px;
+text-align: center;
+background-color: lightblue;
+}
+
+.signup{
+width: 400px;
+height: 7vh;
+border: #d4cccc solid 0.5px;
+background-color: white;
+box-shadow: 6px 4px 9px #242323;
+font-size: larger;
+font-weight: bold;
+border-radius: 20px;
+font-family: 'Lilita One', cursive;
+font-weight: 500;
+cursor: pointer;
+}
+
+.signup:hover{
+color: rgb(255, 42, 42);
+border: #8d8d8d 2px solid;
+box-shadow: 6px 4px 9px lightblue;
+background-color: #ffffff;
+}
+.form{
+border: 1px solid black;
+width: 80vh;
+height: max-content;
+border: #9f9494 solid 0.5px;
+background-color: white;
+box-shadow: 6px 4px 4px #656262;
+font-size: larger;
+font-weight: bold;
+border-radius: 20px;
+font-family: 'Lilita One', cursive;font-weight: bolder;
+color: #2d2c2c;
+
+}
+h3{display: inline; }p{display: inline; }
+h4{display: inline;}
+.style_input{
+    border: #aea6a6 solid 0.5px;
+    background-color: white;
+   width: 80%;
+   height: 5vh;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Lilita One', cursive;
+
+
+} 
+.btn{
+    border: #aea6a6 solid 0.5px;
+    background-color: white;
+    box-shadow: 3px 3px 6px #5a5858;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'Lilita One', cursive;font-weight: 800;    width: 20vh;
+    display: inline;
+    margin-inline: 20px;
+    color: #2d2c2c;
+    margin-bottom: 5%;
+   
+}
+.btn:hover{
+    color: rgb(245, 66, 66);
+    border: #c0c0c0 2px solid;
+    box-shadow: 6px 4px 9px #ffffff;
+    background-color: #ffffff;
+    }
+    #daynight{
+       margin-right: -55vh;
+       margin-bottom: 20px;
+width: 15vh;
+height: 7vh;
+border: #d4cccc solid 0.5px;
+background-color: white;
+box-shadow: 6px 4px 9px #242323;
+font-size: larger;
+font-weight: bold;
+border-radius: 20px;
+font-family: 'Lilita One', cursive;
+font-weight: 500;
+cursor: pointer;
+}
+#daynight:hover{
+    color: rgb(255, 42, 42);
+border: #8d8d8d 2px solid;
+box-shadow: 6px 4px 9px lightblue;
+background-color: #ffffff;
+}
+input{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+ 
+}
+    /* for phone */
+  @media only screen and (max-width: 600px){
+.form{
+width: 80%;
+}
+.style_input{
+    width: 80%;
+}
+#daynight{
+margin: 0%;
+margin-bottom: 5%;
+width: 80%;
+}
+#text1{
+    display: block;
+}
+input{
+   
+}
+#text2{
+display: block;
+
+}
+#text3{
+    display: block;
+}
+  }

@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="android" content="تمرین دوازدهم">
+        <meta name="auther" content="Babak chalacki">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="training.css">    
+            <title>calculator</title>    
+    </head>
+   <body>
+    
+      <div class="calculator">
+        <input type="text" placeholder="0" id="inputbox">
+        <div>
+          <button id="btn-ac" class="btn_op">DEL</button>
+          <button id="btn-del" class="btn_op">!</button>
+          <button id="btn-mod" class="btn_op">%</button>
+          <button class="btn_op" class="operator">/</button>
+        </div>
+        <div>
+          <button  id="btn7">7</button>
+          <button id="btn8">8</button>
+          <button id="btn9">9</button>
+          <button class="btn_op" id="btn_mul">*</button>
+        </div>
+        <div>
+          <button id="btn4">4</button>
+          <button id="btn5">5</button>
+          <button id="btn6">6</button>
+          <button class="btn_op" id="btn_sub">-</button>
+        </div>
+        <div>
+          <button id="btn1">1</button>
+          <button id="btn2">2</button>
+          <button id="btn3">3</button>
+          <button class="btn_op" id="btn_plus" >+</button>
+        </div>
+        <div>
+          <button id="btn00">00</button>
+          <button class="delttt" id="btn0">0</button>
+          <button id="btn_dot" >.</button>
+          <button class="btn_op" id="btn_equal">=</button>
+        </div>
+      </div>
+          
+      <script >
+        var inputbox = document.getElementById("inputbox");
+var btn0 = document.getElementById("btn0");
+var btn00 = document.getElementById("btn00");
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+var btn4 = document.getElementById("btn4");
+var btn5 = document.getElementById("btn5");
+var btn6 = document.getElementById("btn6");
+var btn7 = document.getElementById("btn7");
+var btn8 = document.getElementById("btn8");
+var btn9 = document.getElementById("btn9");
+var btnac = document.getElementById("btn-ac");
+var btnmod = document.getElementById("btn-mod");
+var btnmul = document.getElementById("btn_mul");
+var btnsub = document.getElementById("btn_sub");
+var btnplus = document.getElementById("btn_plus");
+var btnequal = document.getElementById("btn_equal");
+var btndot = document.getElementById("btn_dot")
+var DEL = document.getElementById("btn-del")
+var delttt = document.getElementById("delttt")
+var op,num1,num2;
+
+DEL.onclick = function(){
+  inputbox.delete("delttt")
+}
+
+btn0.onclick = function(){
+  inputbox.value += "0";
+}
+btn00.onclick = function(){
+  inputbox.value += "00";
+}
+
+btn1.onclick = function(){
+  inputbox.value += "1";
+}
+
+btn2.onclick = function(){
+  inputbox.value += "2";
+}
+
+btn3.onclick = function(){
+  inputbox.value += "3";
+}
+
+btn4.onclick = function(){
+  inputbox.value += "4";
+}
+
+btn5.onclick = function(){
+  inputbox.value += "5"
+}
+
+btn6.onclick = function(){
+  inputbox.value += "6"
+}
+
+btn7.onclick = function(){
+  inputbox.value += "7"
+}
+
+btn8.onclick = function(){
+  inputbox.value += "8"
+}
+
+btn9.onclick = function(){
+  inputbox.value += "9"
+}
+
+
+
+
+  btnac.onclick = function(){
+    inputbox.value = ""}
+
+    btndot.onclick = function(){
+      inputbox.value = inputbox.value + "."}
+
+      btn_equal.onclick = function(){
+        if (op=="+"){
+            num2 = parseFloat(inputbox.value);
+            inputbox.value = num1 + num2;
+        }
+        else if (op=="-"){
+            num2 = parseFloat(inputbox.value);
+            inputbox.value = num1 - num2;
+        }
+        else if (op=="*"){
+            num2 = parseFloat(inputbox.value);
+            inputbox.value = num1 * num2;
+        }
+        else if (op=="/"){
+            num2 = parseFloat(inputbox.value);
+            inputbox.value = num1 / num2;
+        }
+        else if (op=="%"){
+            num2 = parseFloat(input.value);
+            inputbox.value = num1 % num2;
+        }  
+    }
+
+    btnplus.onclick = function(){
+      op = "+";
+      num1 = parseFloat(inputbox.value);
+      inputbox.value = "";
+  }
+  
+  btnsub.onclick = function(){
+      op = "-";
+      num1 = parseFloat(inputbox.value);
+      inputbox.value = "";
+  }
+  
+  btnmul.onclick = function(){
+      op = "*";
+      num1 = parseFloat(inputbox.value);
+      inputbox.value = "";
+  }
+  
+  
+  
+  btnmod.onclick = function(){
+      op = "%";
+      num1 = parseFloat(inputbox.value);
+      inputbox.value = "";
+  }
+      </script>
+
+   </body>
+</html>
